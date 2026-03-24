@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Currículum Vitae de Fabiana Sotillo. Formación en Desarrollo de Aplicaciones Multiplataforma." />
-  <title>CV | Fabiana Sotillo</title>
+  <meta name="description" content="Currículum Vitae de Fabiana Sotillo. Formación en Desarrollo de Aplicaciones Multiplataforma y Proyectos Web." />
+  <title>CV | Fabiana Sotillo - Desarrolladora Multiplataforma</title>
 
   <style>
     * {
@@ -21,11 +21,12 @@
     }
 
     .cv {
-      max-width: 900px;
+      /* Ampliado para parecerse más a una proporción Carta/A4 apaisada */
+      max-width: 950px; 
       margin: 40px auto;
       background: #ffffff;
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2.2fr; /* Ligeramente más espacio para la derecha */
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
@@ -43,13 +44,13 @@
     }
 
     .sidebar section {
-      margin-bottom: 30px;
+      margin-bottom: 25px; /* Ligeramente reducido */
     }
 
     .sidebar h2 {
       font-size: 1.1rem;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       border-bottom: 1px solid #ffffff55;
       padding-bottom: 5px;
     }
@@ -65,44 +66,55 @@
       padding-left: 0;
     }
     
+    .sidebar a {
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+      color: #003366;
+    }
+
     .imagen {
-			width: 250px;
-			height: 250px;
-			margin: 0 auto 25px;
-			border-radius: 5%;
-			overflow: hidden;
-			background-color: #bbb; /* color visible si aún no hay imagen */
-		}
+      /* Reducida ligeramente para mejor proporción visual */
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 20px;
+      border-radius: 5%;
+      overflow: hidden;
+      background-color: #bbb;
+    }
 
-		.imagen img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-
+    .imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     /* Columna derecha */
     .content {
-			padding: 35px 40px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-
+      padding: 35px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Cambiado para no forzar estiramiento */
+    }
 
     .content section {
-      margin-bottom: 35px;
+      margin-bottom: 25px; /* Reducido de 35px para compactar */
     }
 
     .content h2 {
       font-size: 1.3rem;
-      margin-bottom: 15px;
+      margin-bottom: 10px; /* Reducido de 15px */
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
     }
 
     .experience {
-      margin-bottom: 20px;
+      margin-bottom: 15px; /* Reducido de 20px */
     }
 
     .experience h3 {
@@ -114,7 +126,7 @@
       font-size: 0.9rem;
       color: #555;
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
 
     .experience ul {
@@ -122,15 +134,8 @@
     }
 
     .experience li {
-      margin-bottom: 6px;
-    }
-    
-    .formacion ul{
-    	padding-left: 18px;
-    }
-    
-    .formacion li {
-      margin-bottom: 6px;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
     }
 
     .profile {
@@ -156,9 +161,9 @@
 
     <aside class="sidebar">
     
-		  <div class="imagen">
-				<img src="imagen_cv.JPEG" alt="Foto de Fabiana Sotillo">
-			</div>
+      <div class="imagen">
+        <img src="imagen_cv.JPEG" alt="Foto de Fabiana Sotillo">
+      </div>
 
       <h1>Fabiana<br />Sotillo</h1>
 
@@ -166,7 +171,29 @@
         <h2>Contacto</h2>
         <p>📞 +34 663 966 940</p>
         <p>✉️ fsotillocuevas@gmail.com</p>
-        <p>📍 C/ Democracia, Valencia, España</p>
+        <p>📍 Valencia, España</p>
+        <p>🔗 <a href="https://linkedin.com/in/fabianasotillo" target="_blank">LinkedIn: /in/fabianasotillo</a></p>
+        <p>💻 <a href="https://github.com/fabianasotillo" target="_blank">GitHub: /fabianasoti</a></p>
+      </section>
+
+      <section>
+        <h2>Stack Tecnológico</h2>
+        <ul>
+          <li><strong>Lenguajes:</strong> Python, PHP, JS</li>
+          <li><strong>Frontend:</strong> HTML5, CSS3</li>
+          <li><strong>Bases de datos:</strong> MySQL</li>
+          <li><strong>IA:</strong> Fine-tuning de modelos</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Resolutiva y adaptable</li>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación efectiva</li>
+          <li>Organización ágil</li>
+        </ul>
       </section>
 
       <section>
@@ -178,26 +205,13 @@
       </section>
 
       <section>
-        <h2>Competencias personales</h2>
+        <h2>Formación</h2>
         <ul>
-          <li>Empatía y comunicación efectiva</li>
-          <li>Organización y gestión de tareas</li>
-          <li>Puntualidad y responsabilidad</li>
-          <li>Capacidad resolutiva y adaptable</li>
-          <li>Trabajo en equipo</li>
+          <li><strong>DAM (1º Año)</strong><br>CEAC FP (Cursando)</li>
+          <li style="margin-top: 8px;"><strong>Bachiller Homologado</strong><br>España (Marzo 2022)</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Competencias técnicas</h2>
-        <ul>
-          <li>MySQL</li>
-          <li>Python</li>
-          <li>HTML y CSS</li>
-          <li>Microsoft Office</li>
-          <li>Warehouse Management OS</li>
-        </ul>
-      </section>
     </aside>
 
     <section class="content">
@@ -205,57 +219,60 @@
       <section>
         <h2>Perfil profesional</h2>
         <p class="profile">
-          Profesional proactiva con experiencia en atención al cliente y análisis de existencias. En formación en Desarrollo de Aplicaciones Multiplataforma (DAM), con interés en el sector tecnológico. Destaco por mi adaptabilidad, comunicación y trabajo en equipo, con un fuerte compromiso con el aprendizaje continuo y la mejora de procesos.
+          Estudiante de primer año en Desarrollo de Aplicaciones Multiplataforma (DAM) buscando mis primeras prácticas en el sector tecnológico. He desarrollado aplicaciones prácticas integrando tecnologías web y bases de datos, y poseo conocimientos introductorios en IA. Mi sólida experiencia previa en atención al cliente y gestión de inventarios me aporta una gran capacidad analítica, adaptabilidad y facilidad para trabajar en equipo bajo presión.
         </p>
       </section>
 
       <section>
-        <h2>Experiencia</h2>
+        <h2>Proyectos Destacados</h2>
 
         <article class="experience">
-          <h3>MYR Hotels – Palacio Vallier</h3>
-          <span>Valencia, España | Mayo 2024 – Actualmente</span>
+          <h3>Desarrollo Web Full-Stack</h3>
+          <span>Proyectos académicos e individuales | 2025 - Actualidad</span>
           <ul>
-            <li>Atención especializada orientada al cliente</li>
-            <li>Administración y gestión de material para eventos</li>
-            <li>Aplicación de protocolos formales de restauración</li>
+            <li>Desarrollo de páginas web dinámicas utilizando <strong>HTML, CSS y JavaScript</strong>.</li>
+            <li>Implementación de la lógica del servidor mediante <strong>PHP</strong>.</li>
+            <li>Creación y estructuración de <strong>controladores con PHP</strong> para la gestión de rutas y datos.</li>
+            <li>Conexión y gestión de bases de datos relacionales con <strong>MySQL</strong>.</li>
           </ul>
         </article>
 
         <article class="experience">
-          <h3>Taberna del Volapié</h3>
-          <span>Valencia, España | Octubre 2022 – Mayo 2024</span>
+          <h3>Prácticas con Inteligencia Artificial</h3>
+          <span>Proyecto de innovación</span>
           <ul>
-            <li>Atención al cliente en sala y barra</li>
-            <li>Manejo de caja, PDA y TPV</li>
+            <li>Uso de <strong>Python</strong> para manipulación de datos y automatización de procesos.</li>
+            <li>Aplicación de técnicas de <strong>Fine-Tuning con modelos de IA</strong> para adaptar respuestas a contextos específicos.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Experiencia Laboral</h2>
+
+        <article class="experience">
+          <h3>MYR Hotels / Taberna del Volapié</h3>
+          <span>Valencia, España | Octubre 2022 – Actualmente</span>
+          <ul>
+            <li>Atención especializada y resolución de incidencias en entornos de alto flujo.</li>
+            <li>Administración y gestión eficiente de recursos y material.</li>
           </ul>
         </article>
 
         <article class="experience">
-          <h3>Bodegas Sodimac</h3>
+          <h3>Bodegas Sodimac - Analista de Inventario</h3>
           <span>Lo Espejo, Chile | Febrero 2020 – Agosto 2022</span>
           <ul>
-            <li>Análisis de existencias de productos inventariados</li>
-            <li>Creación y asignación de códigos de barra y SKU</li>
-            <li>Integración de inventarios con base de datos</li>
+            <li>Análisis de existencias e integración de inventarios con bases de datos.</li>
+            <li>Asignación de códigos de barra y SKU, optimizando la trazabilidad del almacén.</li>
           </ul>
         </article>
       </section>
       
-      <article class="formacion">
-		    <section>
-		      <h2>Formación académica</h2>
-		      <ul>
-		        <li><strong>CEAC FP</strong> – Desarrollo de Aplicaciones Multiplataforma (Cursando)</li>
-		        <li><strong>Título de Bachiller</strong> – Homologado en España (Marzo 2022)</li>
-		      </ul>
-		    </section>
-      </article>
-
       <section>
         <h2>Datos de interés</h2>
-        <p>
-          Disponibilidad horaria flexible para trabajo presencial, híbrido o remoto, así como desplazamiento dentro de la ciudad de Valencia.
+        <p class="profile">
+          Disponibilidad para convenio de prácticas. Flexibilidad para trabajo presencial, híbrido o remoto en Valencia o alrededores.
         </p>
       </section>
 
@@ -265,4 +282,3 @@
 
 </body>
 </html>
-
